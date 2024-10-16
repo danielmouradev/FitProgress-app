@@ -9,19 +9,17 @@ public class Aluno {
     private int matricula; 
     private LocalDate dataNasc; 
     private String email; 
-    private String senha; 
+    private String telefone; 
 
 
-    public Aluno(String nome, int matricula, LocalDate dataNasc, String email, String senha){
+    public Aluno(String nome, int matricula, LocalDate dataNasc, String email, String telefone){
         this.nome = nome; 
         this.matricula = matricula; 
         this.dataNasc = dataNasc; 
         this.email = email; 
-        this.senha = senha; 
+        this.telefone = telefone; 
     }
 
-    //Método da classe
-    public void cadastrarTreino(Treino treino){}
 
 
     //Getter's e Setter's
@@ -63,13 +61,6 @@ public class Aluno {
     }
 
     
-    public String getSenha() {
-        return senha;
-    }
-
     
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 
 }

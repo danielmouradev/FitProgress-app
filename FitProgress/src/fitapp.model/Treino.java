@@ -6,6 +6,7 @@ public class Treino {
     private String musculo; 
     private String descricao; 
     private LocalTime duracao; 
+    private boolean concluido; 
 
 
     //Construtor
@@ -16,10 +17,6 @@ public class Treino {
     }
     
 
-    //Métodos da classe
-    public void listarExercicios(){}
-
-    public void descreverTreino(){}
     
 
     //Getter's e Setter's
@@ -52,5 +49,21 @@ public class Treino {
     public void setDuracao(LocalTime duracao) {
         this.duracao = duracao;
     }
+
+
+
+
+    public boolean isConcluido() {
+        return concluido;
+    }
+
+
+
+
+    public void setConcluido(boolean concluido) {
+        this.concluido = concluido;
+    }
+
+    
 
 }
