@@ -1,14 +1,14 @@
 public enum EnumTreino {
-    
-    PEITO(1), 
+
+    PEITO(1),
     COSTA(2),
     BÍCEPS(3),
-    OMBRO(4), 
-    PERNA(5); 
+    OMBRO(4),
+    PERNA(5);
 
-    private final int valor; 
+    private final int valor;
 
-    EnumTreino(int valor){
+    EnumTreino(int valor) {
         this.valor = valor;
     }
 
@@ -21,15 +21,12 @@ public enum EnumTreino {
         throw new IllegalArgumentException("Id inexistente!"); // Lança exceção se não encontrar
     }
 
-
     public int getValor() {
         return valor;
     }
 
-    public String toLowerCase(){
+    public String toLowerCase() {
         return this.name().toLowerCase();
     }
-
-    
 
 }
